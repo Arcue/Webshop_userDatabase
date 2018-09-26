@@ -3,10 +3,7 @@
 
 User System
 
-Entity Framework / C#
-MYSQL
-
-API STUFFFF
+API
 
 Frontend - API
 
@@ -16,8 +13,7 @@ Frontend - API
 
 
 
-DB STUFFFF
-
+DB 
 	UserID
 	Username
 	hashed Password

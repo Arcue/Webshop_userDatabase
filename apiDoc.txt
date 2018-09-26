@@ -1,0 +1,46 @@
+Get /users/{username}
+
+
+Response:
+{
+	Username:	string
+	Password: 	String
+	Hemadress:	String
+	Postnummer:	Int
+	Stad:	String
+	Group:	Int
+	Registered time:	Timestamp
+	User id:	int
+	
+}
+
+GET /users
+
+Response:
+Json list of usernames
+
+
+Register user
+Post /users
+{
+Username: 	string
+Password: 	string
+Hemadress:	string
+Postnummer:	int
+Stad:	String
+}
+
+Response: 200 OK
+
+Edit userinfo
+Put /users/{username}
+
+{
+Username: 	string
+Password: 	string
+Hemadress:	string
+Postnummer:	int
+Stad:	String
+}
+
+Response: 200 OK

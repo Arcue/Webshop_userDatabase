@@ -14,7 +14,8 @@ Frontend - API
 
 
 DB 
-
+	
+	authToken
 	UserID
 	Username
 	hashed Password

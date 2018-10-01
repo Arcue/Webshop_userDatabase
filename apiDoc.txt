@@ -1,4 +1,5 @@
 Get /users/{username}
+(authToken)
 
 
 Response:

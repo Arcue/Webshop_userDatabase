@@ -3,7 +3,7 @@ ALL RESPONSES AS JSON
 POST /login
 Request: JSON objekt med userinfo
 {
-	Email:		string
+	email:		string
 	password:	string
 }
 
@@ -17,12 +17,12 @@ Response:
 Register user
 Post /users
 Request:{
-	Name:		string
-	Email: 		string
-	Password: 	string
-	Hemadress:	string
-	Postnummer:	int
-	Stad:		String
+	name:		string
+	email: 		string
+	password: 	string
+	homeadress:	string
+	postnumber:	string
+	city:		String
 }
 Response
 {
@@ -32,26 +32,26 @@ Response
 Response: 200 OK
 
 Get user
-Get /users
+Get /user
 Headers: x-auth-token: TOKEN-String
 Response {
-	Name:		string
-	Email: 		string
-	Hemadress:	string
-	Postnummer:	int
-	Stad:		String
+	name:		string
+	email: 		string
+	homeadress:	string
+	postnummer:	string
+	city:		string
 }
 Edit userinfo
 
 Put /users/update
 Headers: x-auth-token: TOKEN-String 
 Request: {
-	Name:		string
-	Email:	 	string
-	Password: 	string
-	Hemadress:	string
-	Postnummer:	int
-	Stad:		String
+	name:		string
+	email:	 	string
+	password: 	string
+	homeadress:	string
+	postnumber:	string
+	city:		string
 }
 
 Response: 200 OK

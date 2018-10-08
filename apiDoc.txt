@@ -3,13 +3,7 @@ ALL RESPONSES AS JSON
 POST /login
 Response:
 {
-	TOKEN (
-	Username:	string
-	Hemadress:	String
-	Postnummer:	Int
-	Stad:	String
-	)
-	
+	TOKEN
 }
 
 GET /users

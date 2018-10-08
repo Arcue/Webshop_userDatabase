@@ -10,7 +10,7 @@ Request: JSON objekt med userinfo
 
 Response:
 {
-	TOKEN: String
+	x-auth-token: TOKEN-String
 }
 
 
@@ -25,7 +25,7 @@ Request:{
 }
 Response
 {
-	Token:		String
+	x-auth-token: TOKEN-String
 }
 
 Response: 200 OK
@@ -34,7 +34,7 @@ Edit userinfo
 
 Put /users/update
 Request: {
-	Token: 		String
+	x-auth-token: TOKEN-String
 	Username: 	string
 	Password: 	string
 	Hemadress:	string

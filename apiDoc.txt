@@ -6,14 +6,10 @@ Response:
 	TOKEN
 }
 
-GET /users
-
-Response:
-Json list of usernames
-
 GET /Users/info
 
-Response: 
+Response:
+
 List of users with info
 {
 	

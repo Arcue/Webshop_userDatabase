@@ -1,17 +1,13 @@
-Get /users/{username}
-(authToken)
-
+POST /login
 
 Response:
 {
+	TOKEN (
 	Username:	string
-	Password: 	String
 	Hemadress:	String
 	Postnummer:	Int
 	Stad:	String
-	Group:	Int
-	Registered time:	Timestamp
-	User id:	int
+	)
 	
 }
 
@@ -20,6 +16,20 @@ GET /users
 Response:
 Json list of usernames
 
+GET /Users/info
+
+Response: {
+	Username:	string,
+	Hemadress:	tring,
+	Postnummer: 	int,
+	Stad 		string,
+	Registred	time,
+	email		string,
+	postnummer	int,
+	adress		string
+	
+
+}
 
 Register user
 Post /users

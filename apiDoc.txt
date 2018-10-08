@@ -30,11 +30,20 @@ Response
 
 Response: 200 OK
 
+Get user
+Headers: x-auth-token: TOKEN-String
+Response {
+	Username: 	string
+	Hemadress:	string
+	Postnummer:	int
+	Stad:		String
+
 Edit userinfo
 
 Put /users/update
+Headers: x-auth-token: TOKEN-String 
 Request: {
-	x-auth-token: TOKEN-String
+	
 	Username: 	string
 	Password: 	string
 	Hemadress:	string

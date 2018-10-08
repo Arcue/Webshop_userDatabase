@@ -1,49 +1,45 @@
 ALL RESPONSES AS JSON
 
 POST /login
-Response:
+Request: JSON objekt med userinfo
 {
-	TOKEN
+	username:	string
+	password:	string
 }
 
-GET /Users/info
 
 Response:
-
-List of users with info
 {
-	
-	Username:	string,
-	Hemadress:	tring,
-	Postnummer: 	int,
-	Stad 		string,
-	Registred	time,
-	email		string,
-	postnummer	int,
-	adress		string
+	TOKEN: String
 }
+
 
 Register user
 Post /users
+Request:{
+	Username: 	string
+	Password: 	string
+	Hemadress:	string
+	Postnummer:	int
+	Stad:		String
+}
+Response
 {
-Username: 	string
-Password: 	string
-Hemadress:	string
-Postnummer:	int
-Stad:	String
+	Token:		String
 }
 
 Response: 200 OK
 
 Edit userinfo
-(AUTHTOKENAUTENTICATION)
+
 Put /users/update
-{
-Username: 	string
-Password: 	string
-Hemadress:	string
-Postnummer:	int
-Stad:	String
+Request: {
+	Token: 		String
+	Username: 	string
+	Password: 	string
+	Hemadress:	string
+	Postnummer:	int
+	Stad:		String
 }
 
 Response: 200 OK

@@ -1,47 +1,57 @@
-Get /users/{username}
-(authToken)
+ALL RESPONSES AS JSON
+
+POST /login
+Request: JSON objekt med userinfo
+{
+	email:		string
+	password:	string
+}
 
 
 Response:
 {
-	Username:	string
-	Password: 	String
-	Hemadress:	String
-	Postnummer:	Int
-	Stad:	String
-	Group:	Int
-	Registered time:	Timestamp
-	User id:	int
-	
+	x-auth-token: TOKEN-String
 }
-
-GET /users
-
-Response:
-Json list of usernames
 
 
 Register user
 Post /users
+Request:{
+	name:		string
+	email: 		string
+	password: 	string
+	homeadress:	string
+	postnumber:	string
+	city:		String
+}
+Response
 {
-Username: 	string
-Password: 	string
-Hemadress:	string
-Postnummer:	int
-Stad:	String
+	x-auth-token: TOKEN-String
 }
 
 Response: 200 OK
 
+Get user
+Get /user
+Headers: x-auth-token: TOKEN-String
+Response {
+	name:		string
+	email: 		string
+	homeadress:	string
+	postnummer:	string
+	city:		string
+}
 Edit userinfo
-Put /users/{username}
 
-{
-Username: 	string
-Password: 	string
-Hemadress:	string
-Postnummer:	int
-Stad:	String
+Put /users/update
+Headers: x-auth-token: TOKEN-String 
+Request: {
+	name:		string
+	email:	 	string
+	password: 	string
+	homeadress:	string
+	postnumber:	string
+	city:		string
 }
 
 Response: 200 OK

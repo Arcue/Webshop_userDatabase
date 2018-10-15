@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using UserAPI.Models;
 
 namespace UserAPI.Controllers
@@ -46,8 +47,9 @@ namespace UserAPI.Controllers
             return Ok(tableUser);
         }
 
-        // PUT: api/Users/5
-        [HttpPut("{id}")]
+        // PUT: api/Users/
+        //Redigerar en användare
+        [HttpPut]
         public async Task<IActionResult> PutTableUser([FromRoute] int id, [FromBody] TableUser tableUser)
         {
             if (!ModelState.IsValid)
@@ -82,32 +84,45 @@ namespace UserAPI.Controllers
         }
 
         // POST: api/Users
+        //Registrerar en ny användare
         [HttpPost]
-        public async Task<IActionResult> PostTableUser([FromBody] TableUser tableUser)
+        public async Task<IActionResult> PostTableUser(string jsonString)
         {
+            TableUser newUser = JsonConvert.DeserializeObject<TableUser>(jsonString);
+
+            //Kollar att username och email inte registrerats förut
+            if (UsernameAndEmailExists(newUser.Username, newUser.Email))
+            {
+                //Hittade användarman eller email redan
+            } else
+            {
+
+            }
+
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            _context.TableUser.Add(tableUser);
+            //_context.TableUser.Add(tableUser);
             try
             {
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateException)
             {
-                if (TableUserExists(tableUser.Userid))
+                /*if (TableUserExists(tableUser.Userid))
                 {
                     return new StatusCodeResult(StatusCodes.Status409Conflict);
                 }
                 else
                 {
                     throw;
-                }
+                }*/
             }
 
-            return CreatedAtAction("GetTableUser", new { id = tableUser.Userid }, tableUser);
+            // return CreatedAtAction("GetTableUser", new { id = tableUser.Userid }, tableUser);
+            return null;
         }
 
         // DELETE: api/Users/5
@@ -133,7 +148,26 @@ namespace UserAPI.Controllers
 
         private bool TableUserExists(int id)
         {
+           
+
             return _context.TableUser.Any(e => e.Userid == id);
+
+        }
+
+        //Kollar om Username redan finns in listan
+        private bool UsernameAndEmailExists(String userName, String email)
+        {
+            bool itExists = false;
+            if (_context.TableUser.Any(e => e.Username == userName))
+            {
+                itExists = true;
+            }
+            if (_context.TableUser.Any(e => e.Email == email))
+            {
+                itExists = true;
+            }
+
+            return itExists;
         }
     }
 }

@@ -62,14 +62,14 @@ namespace UserAPI.Controllers
             }
             catch (DbUpdateException)
             {
-                if (TableUserExists(tableUser.Userid))
+               /* if (TableUserExists(tableUser.Userid))
                 {
                     return new StatusCodeResult(StatusCodes.Status409Conflict);
                 }
                 else
                 {
                     throw;
-                }
+                }*/
             }
 
             return CreatedAtAction("GetTableUser", new { id = tableUser.Userid }, tableUser);

@@ -94,35 +94,24 @@ namespace UserAPI.Controllers
             if (UsernameAndEmailExists(newUser.Username, newUser.Email))
             {
                 //Hittade användarman eller email redan
+                return BadRequest("Username or email already exists");
             } else
             {
-
-            }
-
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            //_context.TableUser.Add(tableUser);
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateException)
-            {
-                /*if (TableUserExists(tableUser.Userid))
+                if (!ModelState.IsValid)
                 {
-                    return new StatusCodeResult(StatusCodes.Status409Conflict);
+                    return BadRequest(ModelState);
                 }
-                else
+                _context.TableUser.Add(newUser);
+                try
                 {
-                    throw;
-                }*/
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateException)
+                {
+                    
+                }
             }
-
-            // return CreatedAtAction("GetTableUser", new { id = tableUser.Userid }, tableUser);
-            return null;
+            return CreatedAtAction("GetTableUser", new { id = newUser.Userid }, newUser);
         }
 
         // DELETE: api/Users/5
@@ -168,6 +157,24 @@ namespace UserAPI.Controllers
             }
 
             return itExists;
+        }
+
+        private string createToken()
+        {
+            Random random = new Random();
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+
+            String token = Enumerable.Repeat(chars, 16).Select(s => s[random.Next(s.Length)]).ToString();
+
+            return encodeToken( new string(Enumerable.Repeat(chars, 16).Select(s => s[random.Next(s.Length)]).ToArray()));
+        }
+
+        private string encodeToken(String token)
+        {
+            var plain = System.Text.Encoding.UTF8.GetBytes(token);
+            var base64token = System.Convert.ToBase64String(plain);
+
+            return base64token;
         }
     }
 }

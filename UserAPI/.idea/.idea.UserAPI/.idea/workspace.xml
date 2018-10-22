@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5b18362b-240f-4bd7-9e48-e85827474eca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/UserAPI/Controllers/UserController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserAPI/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserAPI/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserAPI/UserAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UserAPI/UserAPI.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserAPI/obj/Debug/netcoreapp2.1/UserAPI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserAPI/obj/Debug/netcoreapp2.1/UserAPI.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserAPI/obj/Debug/netcoreapp2.1/UserAPI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserAPI/obj/Debug/netcoreapp2.1/UserAPI.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserAPI/obj/Debug/netcoreapp2.1/UserAPI.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/UserAPI/obj/Debug/netcoreapp2.1/UserAPI.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserAPI/obj/Debug/netcoreapp2.1/UserAPI.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserAPI/obj/Debug/netcoreapp2.1/UserAPI.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserAPI/obj/UserAPI.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserAPI/obj/UserAPI.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserAPI/obj/UserAPI.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/UserAPI/obj/UserAPI.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserAPI/obj/UserAPI.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/UserAPI/obj/UserAPI.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserAPI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserAPI/obj/project.assets.json" afterDir="false" />
-    </list>
+    <list default="true" id="5b18362b-240f-4bd7-9e48-e85827474eca" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +71,7 @@
     <session id="-1676855418">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.55" value="1" />
@@ -127,6 +115,82 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
               <caret line="42" selection-start-line="42" selection-end-line="42" />
+              <folding>
+                <marker date="1539608064509" expanded="false" signature="6:421" ph="..." />
+                <marker date="1539608064509" expanded="true" signature="440:2093" ph="{...}" />
+                <marker date="1539608064509" expanded="true" signature="467:2091" ph="{...}" />
+                <marker date="1539608064509" expanded="true" signature="526:589" ph="{...}" />
+                <marker date="1539608064509" expanded="true" signature="812:1723" ph="{...}" />
+                <marker date="1539608064509" expanded="true" signature="993:1203" ph="{...}" />
+                <marker date="1539608064509" expanded="true" signature="1911:2085" ph="{...}" />
+                <marker date="1539608064509" expanded="true" signature="1958:2035" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/UserAPI/Controllers/UsersController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="775">
+              <caret line="170" column="9" lean-forward="true" selection-start-line="170" selection-start-column="9" selection-end-line="170" selection-end-column="9" />
+              <folding>
+                <marker date="1539608669173" expanded="false" signature="6:243" ph="..." />
+                <marker date="1539608669173" expanded="true" signature="274:4495" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="378:4493" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="504:556" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="654:713" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="842:1177" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="889:964" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="1069:1132" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="1187:1238" ph="/* PUT: api/Users ... */" />
+                <marker date="1539608669173" expanded="true" signature="1362:2076" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="1409:1484" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="1525:1590" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="1676:1755" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="1804:2033" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="1860:1935" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="1956:2019" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="2086:2142" ph="/* POST: api/Users ... */" />
+                <marker date="1539608669173" expanded="true" signature="2235:3307" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="2473:2557" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="2562:2591" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="2629:2704" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="2770:2849" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="2887:3174" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="2918:3160" ph="/* if (TableUserExists(tableUser.Userid)) ... */" />
+                <marker date="1539608669173" expanded="true" signature="3445:3877" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="3492:3567" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="3671:3734" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="3923:4021" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="4148:4487" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="4262:4323" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="4386:4447" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UserAPI/Controllers/LoginController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="760">
+              <caret line="71" column="17" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+              <folding>
+                <marker date="1539608669173" expanded="true" signature="6:220" ph="..." />
+                <marker date="1539608669173" expanded="true" signature="251:1993" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="355:1991" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="481:533" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="631:690" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="819:1154" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="866:941" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="1046:1109" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="1293:1984" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="1340:1415" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="1479:1558" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="1596:1879" ph="{...}" />
+                <marker date="1539608669173" expanded="true" signature="1627:1865" ph="/* if (TableUserExists(tableUser.Userid)) ... */" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -134,42 +198,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UserAPI/Controllers/ValuesController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="195">
               <caret line="13" selection-start-line="13" selection-end-line="17" selection-end-column="9" />
-              <folding>
-                <marker date="1538993486901" expanded="false" signature="6:128" ph="..." />
-                <marker date="1538993486901" expanded="true" signature="159:969" ph="{...}" />
-                <marker date="1538993486901" expanded="true" signature="264:967" ph="{...}" />
-                <marker date="1538993486901" expanded="true" signature="369:445" ph="{...}" />
-                <marker date="1538993486901" expanded="true" signature="548:596" ph="{...}" />
-                <marker date="1538993486901" expanded="true" signature="693:713" ph="{...}" />
-                <marker date="1538993486901" expanded="true" signature="825:845" ph="{...}" />
-                <marker date="1538993486901" expanded="true" signature="941:961" ph="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UserAPI/Controllers/UserController.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="18" column="41" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="41" />
-              <folding>
-                <marker date="1539003529854" expanded="false" signature="6:128" ph="..." />
-                <marker date="1539003529854" expanded="true" signature="159:442" ph="{...}" />
-                <marker date="1539003529854" expanded="true" signature="263:440" ph="{...}" />
-                <marker date="1539003529854" expanded="true" signature="358:434" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/edaa9a20-978e-4501-a4e0-53b7257d00cb/console.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="51" lean-forward="true" selection-start-column="51" selection-end-column="51" />
+              <caret column="51" selection-start-column="51" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -189,9 +228,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/UserAPI/Controllers/UserController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/UserAPI/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/UserAPI/Controllers/ValuesController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/UserAPI/Controllers/LoginController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/UserAPI/Controllers/UsersController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -308,7 +348,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5233000" />
+    <option name="totallyTimeSpent" value="5338000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -320,9 +360,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="452" y="231" width="917" height="789" extended-state="0" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30309987" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15218595" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -345,7 +385,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.695752" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.33314887" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,39 +415,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="42" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <marker date="1539608064509" expanded="false" signature="6:421" ph="..." />
+            <marker date="1539608064509" expanded="true" signature="440:2093" ph="{...}" />
+            <marker date="1539608064509" expanded="true" signature="467:2091" ph="{...}" />
+            <marker date="1539608064509" expanded="true" signature="526:589" ph="{...}" />
+            <marker date="1539608064509" expanded="true" signature="812:1723" ph="{...}" />
+            <marker date="1539608064509" expanded="true" signature="993:1203" ph="{...}" />
+            <marker date="1539608064509" expanded="true" signature="1911:2085" ph="{...}" />
+            <marker date="1539608064509" expanded="true" signature="1958:2035" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UserAPI/Controllers/ValuesController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="195">
           <caret line="13" selection-start-line="13" selection-end-line="17" selection-end-column="9" />
-          <folding>
-            <marker date="1538993486901" expanded="false" signature="6:128" ph="..." />
-            <marker date="1538993486901" expanded="true" signature="159:969" ph="{...}" />
-            <marker date="1538993486901" expanded="true" signature="264:967" ph="{...}" />
-            <marker date="1538993486901" expanded="true" signature="369:445" ph="{...}" />
-            <marker date="1538993486901" expanded="true" signature="548:596" ph="{...}" />
-            <marker date="1538993486901" expanded="true" signature="693:713" ph="{...}" />
-            <marker date="1538993486901" expanded="true" signature="825:845" ph="{...}" />
-            <marker date="1538993486901" expanded="true" signature="941:961" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UserAPI/Controllers/UserController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" column="41" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="41" />
-          <folding>
-            <marker date="1539003529854" expanded="false" signature="6:128" ph="..." />
-            <marker date="1539003529854" expanded="true" signature="159:442" ph="{...}" />
-            <marker date="1539003529854" expanded="true" signature="263:440" ph="{...}" />
-            <marker date="1539003529854" expanded="true" signature="358:434" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/UserAPI/Controllers/UserController.cs" />
     <entry file="das://edaa9a20-978e-4501-a4e0-53b7257d00cb/database/dfug8uq2aj17f1/schema/public/table/table_user">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -418,7 +446,7 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/edaa9a20-978e-4501-a4e0-53b7257d00cb/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="51" lean-forward="true" selection-start-column="51" selection-end-column="51" />
+          <caret column="51" selection-start-column="51" selection-end-column="51" />
         </state>
       </provider>
     </entry>

@@ -9,12 +9,24 @@
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="UserAPI" t="IncludeRecursive">
         <e p="Controllers" t="Include">
-          <e p="UserController.cs" t="Include" />
+          <e p="LoginController.cs" t="Include" />
+          <e p="UsersController.cs" t="Include" />
+          <e p="Usersystemcontroller.cs" t="Include" />
           <e p="ValuesController.cs" t="Include" />
+        </e>
+        <e p="Helpers" t="Include">
+          <e p="AppSettings.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="TableUser.cs" t="Include" />
+          <e p="dfug8uq2aj17f1Context.cs" t="Include" />
         </e>
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="UserService.cs" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
         <e p="UserAPI.csproj" t="IncludeRecursive" />

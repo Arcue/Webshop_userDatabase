@@ -2,10 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
+using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
+using UserAPI.Helpers;
 using UserAPI.Models;
 
 namespace UserAPI.Controllers
@@ -15,8 +19,10 @@ namespace UserAPI.Controllers
     public class UsersController : ControllerBase
     {
         private readonly dfug8uq2aj17f1Context _context;
+        private IMapper _mapper;
+        private readonly AppSettings _appSettings;
 
-        public UsersController(dfug8uq2aj17f1Context context)
+        public UsersController(dfug8uq2aj17f1Context context, IMapper mapper, IOptions<AppSettings> appSettings)
         {
             _context = context;
         }
@@ -159,22 +165,10 @@ namespace UserAPI.Controllers
             return itExists;
         }
 
-        private string createToken()
-        {
-            Random random = new Random();
-            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
-            String token = Enumerable.Repeat(chars, 16).Select(s => s[random.Next(s.Length)]).ToString();
 
-            return encodeToken( new string(Enumerable.Repeat(chars, 16).Select(s => s[random.Next(s.Length)]).ToArray()));
-        }
 
-        private string encodeToken(String token)
-        {
-            var plain = System.Text.Encoding.UTF8.GetBytes(token);
-            var base64token = System.Convert.ToBase64String(plain);
 
-            return base64token;
-        }
+
     }
 }

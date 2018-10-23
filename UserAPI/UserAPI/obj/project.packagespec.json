@@ -26,6 +26,18 @@
   "frameworks": {
     "netcoreapp2.1": {
       "dependencies": {
+        "AutoMapper": {
+          "target": "Package",
+          "version": "[7.0.1, )"
+        },
+        "EntityFramework": {
+          "target": "Package",
+          "version": "[6.2.0, )"
+        },
+        "JWT": {
+          "target": "Package",
+          "version": "[5.0.0-beta4, )"
+        },
         "Microsoft.AspNetCore.App": {
           "suppressParent": "All",
           "target": "Package",
@@ -42,9 +54,25 @@
           "version": "[2.1.0, )",
           "autoReferenced": true
         },
+        "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+          "target": "Package",
+          "version": "[2.1.1, )"
+        },
         "Newtonsoft.Json": {
           "target": "Package",
           "version": "[11.0.2, )"
+        },
+        "Npgsql": {
+          "target": "Package",
+          "version": "[4.0.3, )"
+        },
+        "Npgsql.EntityFrameworkCore.PostgreSQL": {
+          "target": "Package",
+          "version": "[2.1.1, )"
+        },
+        "System.IdentityModel.Tokens.Jwt": {
+          "target": "Package",
+          "version": "[5.3.0, )"
         }
       },
       "imports": [

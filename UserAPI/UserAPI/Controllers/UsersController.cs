@@ -6,6 +6,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -35,6 +36,7 @@ namespace UserAPI.Controllers
             _appSettings = appSettings.Value;
         }
 
+        [AllowAnonymous]
         [HttpPost("login")]
         public IActionResult Authenticate([FromBody]TableUserDto userDto)
         {
@@ -42,23 +44,47 @@ namespace UserAPI.Controllers
 
             if (user == null)
             {
-                return BadRequest(new {message = "Username or password incorrect"});
+                return BadRequest(new { message = "Username or password incorrect" });
             }
 
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
             var tokenDescriptor = new SecurityTokenDescriptor
             {
-                Subject = new ClaimsIdentity()
+                Subject = new ClaimsIdentity(new Claim[]
+                {
+                    new Claim(ClaimTypes.Name, user.Userid.ToString())
+                }),
+                Expires = DateTime.UtcNow.AddDays(7),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256)
             };
+
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            var tokenString = tokenHandler.WriteToken(token);
 
             return Ok(new
             {
-                
+                x_auth_token = tokenString
             });
 
         }
 
+        [HttpPost("register")]
+        public IActionResult Register([FromBody] TableUserDto userDto)
+        {
+            var user = _mapper.Map<TableUser>(userDto);
+
+            try
+            {
+                _userService.Create(user, userDto.Password);
+                return Ok();
+            }
+            catch (ApplicationException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+
+            }
+        }
 
     }
 }

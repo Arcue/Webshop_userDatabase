@@ -41,6 +41,7 @@ namespace UserAPI.Controllers
         public IActionResult Authenticate([FromBody]TableUserDto userDto)
         {
             var user = _userService.Authenticate(userDto.Email, userDto.Password);
+            
 
             if (user == null)
             {
@@ -61,7 +62,9 @@ namespace UserAPI.Controllers
 
             var token = tokenHandler.CreateToken(tokenDescriptor);
             var tokenString = tokenHandler.WriteToken(token);
-
+            //Spara token i user databasen
+            _userService.StoreToken(tokenString, user.Userid);
+            
             return Ok(new
             {
                 x_auth_token = tokenString
@@ -87,12 +90,12 @@ namespace UserAPI.Controllers
             }
         }
 
-        [HttpPut("update")]
-        public IActionResult Update([FromBody] String token, TableUserDto user)
+        [HttpPost("update")]
+        public IActionResult Update([FromBody] String token)
         {
             try
             {
-                int id = _userService.Update(token, user);
+                int id = _userService.Update(token);
                 return Ok(new
                 {
                     userId = id

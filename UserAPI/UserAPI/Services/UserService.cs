@@ -12,8 +12,9 @@ namespace UserAPI.Services
         TableUser Authenticate(string username, string password);
         TableUser Create(TableUser user, string password);
         IEnumerable<TableUser> GetAll();
-        int Update(String token, TableUserDto user);
+        int Update(String token);
         void Delete(int id);
+        void StoreToken(String token, int userId);
     }
     
     public class UserService : IUserService
@@ -72,37 +73,16 @@ namespace UserAPI.Services
             return _context.TableUser;
         }
 
-        public int Update(string token, TableUserDto user)
+        public int Update(string token)
         {
             return getUserId(token);
-            //Kollar vilken information som skall updateras
-            if (user.Username != null)
-            {
-                
-            }
-            if (user.Adress != null)
-            {
-                
-            }
-            if (user.Email!= null)
-            {
-                
-            }
-            if (user.Password != null)
-            {
-                
-            }
-            if (user.Stad != null)
-            {
-                
-            }
         }
         
         //Hämtar userId baserat på token
         public int getUserId(String token)
         {
             
-            var user = _context.TableUser.SingleOrDefault(x => x.Authtoken == token);
+            var user = _context.TableUser.SingleOrDefault(x => x.Authtoken.Equals(token));
             int userId = user.Userid;
             
             return userId;
@@ -167,9 +147,21 @@ namespace UserAPI.Services
                     }
                 }
             }
-
-            
             return true;
+        }
+
+        public void StoreToken(String token, int userId)
+        {
+            var user = _context.TableUser.Find(userId);
+
+            if (user == null)
+            {
+                throw new ApplicationException("User not found");
+            }
+            
+            user.Authtoken = token;
+            _context.TableUser.Update(user);
+            _context.SaveChanges();
         }
         
         

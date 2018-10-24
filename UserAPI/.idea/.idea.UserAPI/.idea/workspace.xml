@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5b18362b-240f-4bd7-9e48-e85827474eca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.UserAPI/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.UserAPI/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.UserAPI/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.UserAPI/.idea/dataSources/edaa9a20-978e-4501-a4e0-53b7257d00cb.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.UserAPI/.idea/dataSources/edaa9a20-978e-4501-a4e0-53b7257d00cb/storage_v2/_src_/database/dfug8uq2aj17f1.zKUyvQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.UserAPI/.idea/dataSources/edaa9a20-978e-4501-a4e0-53b7257d00cb/storage_v2/_src_/database/dfug8uq2aj17f1.zKUyvQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.UserAPI/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.UserAPI/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.UserAPI/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.UserAPI/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.UserAPI/riderModule.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/UserAPI/DesignTimeBuild/.dtbcache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/UserAPI/v15/.suo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/UserAPI/v15/Server/sqlite3/db.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/UserAPI/v15/Server/sqlite3/storage.ide" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/UserAPI/v15/Server/sqlite3/storage.ide-shm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/UserAPI/v15/Server/sqlite3/storage.ide-wal" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/config/applicationhost.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/slnx.sqlite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/.vs/UserAPI/v15/.suo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/.vs/VSWorkspaceState.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/.vs/slnx.sqlite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/Controllers/TableUsersController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/Controllers/UsersController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/Dto/TableUserDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/Helpers/AppSettings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/Helpers/AutoMapper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/Models/TableUser.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/Models/dfug8uq2aj17f1Context.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/Properties/launchSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/Services/UserService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/Startup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/UserAPI.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/UserAPI.csproj.user" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/appsettings.Development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/bin/Debug/netcoreapp2.1/UserAPI.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/bin/Debug/netcoreapp2.1/UserAPI.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/bin/Debug/netcoreapp2.1/UserAPI.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/bin/Debug/netcoreapp2.1/UserAPI.runtimeconfig.dev.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/bin/Debug/netcoreapp2.1/UserAPI.runtimeconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/obj/Debug/netcoreapp2.1/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/obj/Debug/netcoreapp2.1/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/obj/Debug/netcoreapp2.1/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/obj/Debug/netcoreapp2.1/UserAPI.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/obj/Debug/netcoreapp2.1/UserAPI.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/obj/Debug/netcoreapp2.1/UserAPI.RazorAssemblyInfo.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/obj/Debug/netcoreapp2.1/UserAPI.RazorAssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/obj/Debug/netcoreapp2.1/UserAPI.RazorTargetAssemblyInfo.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/obj/Debug/netcoreapp2.1/UserAPI.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/obj/Debug/netcoreapp2.1/UserAPI.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/obj/Debug/netcoreapp2.1/UserAPI.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/obj/Debug/netcoreapp2.1/UserAPI.csprojAssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/obj/Debug/netcoreapp2.1/UserAPI.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/obj/Debug/netcoreapp2.1/UserAPI.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/obj/Release/netcoreapp2.1/UserAPI.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/obj/Release/netcoreapp2.1/UserAPI.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/obj/Release/netcoreapp2.1/UserAPI.RazorAssemblyInfo.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/obj/Release/netcoreapp2.1/UserAPI.RazorAssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/obj/Release/netcoreapp2.1/UserAPI.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/obj/Release/netcoreapp2.1/UserAPI.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/obj/UserAPI.csproj.EntityFrameworkCore.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/obj/UserAPI.csproj.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/obj/UserAPI.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/obj/UserAPI.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserAPI/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../apiDoc.txt" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="dfug8uq2aj17f1@ec2-54-246-101-215.eu-west-1.compute.amazonaws.com" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="dfug8uq2aj17f1@ec2-54-246-101-215.eu-west-1.compute.amazonaws.com" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="dfug8uq2aj17f1@ec2-54-246-101-215.eu-west-1.compute.amazonaws.com" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="dfug8uq2aj17f1: database" type="6d9b600a:PostgresImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="dfug8uq2aj17f1@ec2-54-246-101-215.eu-west-1.compute.amazonaws.com" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="dfug8uq2aj17f1: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="dfug8uq2aj17f1@ec2-54-246-101-215.eu-west-1.compute.amazonaws.com" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="dfug8uq2aj17f1: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="dfug8uq2aj17f1@ec2-54-246-101-215.eu-west-1.compute.amazonaws.com" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="dfug8uq2aj17f1: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+        <item name="table_user: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ExecutionTargetDialog">
+    <checked>
+      <node key="edaa9a20-978e-4501-a4e0-53b7257d00cb" />
+    </checked>
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1676855418">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.31" value="1" />
+          <entry key="project.open.time.55" value="1" />
+          <entry key="project.opened" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="13" />
+          <entry key="groovy" value="1" />
+          <entry key="json" value="1" />
+          <entry key="sql" value="1" />
+          <entry key="table_user" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="13" />
+          <entry key="Database Element" value="1" />
+          <entry key="JSON" value="1" />
+          <entry key="Scratch" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="2681" />
+          <entry key="json" value="48" />
+          <entry key="sql" value="124" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="2681" />
+          <entry key="JSON" value="48" />
+          <entry key="SQL" value="4" />
+          <entry key="Scratch" value="120" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="591447444">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="804" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="804" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UserAPI/Startup.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="810">
+              <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/UserAPI/Controllers/UsersController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="790">
+              <caret line="100" column="43" lean-forward="true" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
+              <folding>
+                <marker date="1540368185785" expanded="false" signature="6:576" ph="..." />
+                <marker date="1540368185785" expanded="true" signature="607:3210" ph="{...}" />
+                <marker date="1540368185785" expanded="true" signature="707:3208" ph="{...}" />
+                <marker date="1540368185785" expanded="true" signature="949:1085" ph="{...}" />
+                <marker date="1540368185785" expanded="true" signature="1213:2256" ph="{...}" />
+                <marker date="1540368185785" expanded="true" signature="1337:1452" ph="{...}" />
+                <marker date="1540368185785" expanded="true" signature="1657:2014" ph="{...}" />
+                <marker date="1540368185785" expanded="true" signature="1732:1822" ph="{...}" />
+                <marker date="1540368185785" expanded="true" signature="2185:2243" ph="{...}" />
+                <marker date="1540368185785" expanded="true" signature="2384:2733" ph="{...}" />
+                <marker date="1540368185785" expanded="true" signature="2467:2585" ph="{...}" />
+                <marker date="1540368185785" expanded="true" signature="2629:2723" ph="{...}" />
+                <marker date="1540368185785" expanded="true" signature="2842:3201" ph="{...}" />
+                <marker date="1540368185785" expanded="true" signature="2868:3055" ph="{...}" />
+                <marker date="1540368185785" expanded="true" signature="2988:3039" ph="{...}" />
+                <marker date="1540368185785" expanded="true" signature="3099:3191" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UserAPI/Services/UserService.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+              <folding>
+                <marker date="1540368068097" expanded="false" signature="6:143" ph="..." />
+                <marker date="1540368068097" expanded="true" signature="171:5188" ph="{...}" />
+                <marker date="1540368068097" expanded="true" signature="207:467" ph="{...}" />
+                <marker date="1540368068097" expanded="true" signature="516:5186" ph="{...}" />
+                <marker date="1540368068097" expanded="true" signature="629:681" ph="{...}" />
+                <marker date="1540368068097" expanded="true" signature="754:1225" ph="{...}" />
+                <marker date="1540368068097" expanded="true" signature="958:1015" ph="{...}" />
+                <marker date="1540368068097" expanded="true" signature="1120:1177" ph="{...}" />
+                <marker date="1540368068097" expanded="true" signature="1291:2144" ph="{...}" />
+                <marker date="1540368068097" expanded="true" signature="1400:1498" ph="{...}" />
+                <marker date="1540368068097" expanded="true" signature="1638:1745" ph="{...}" />
+                <marker date="1540368068097" expanded="true" signature="2200:2259" ph="{...}" />
+                <marker date="1540368068097" expanded="true" signature="2319:2846" ph="{...}" />
+                <marker date="1540368068097" expanded="true" signature="2465:2510" ph="{...}" />
+                <marker date="1540368068097" expanded="true" signature="2547:2592" ph="{...}" />
+                <marker date="1540368068097" expanded="true" signature="2627:2672" ph="{...}" />
+                <marker date="1540368068097" expanded="true" signature="2711:2756" ph="{...}" />
+                <marker date="1540368068097" expanded="true" signature="2791:2836" ph="{...}" />
+                <marker date="1540368068097" expanded="true" signature="2939:3136" ph="{...}" />
+                <marker date="1540368068097" expanded="true" signature="3173:3394" ph="{...}" />
+                <marker date="1540368068097" expanded="true" signature="3267:3384" ph="{...}" />
+                <marker date="1540368068097" expanded="true" signature="3509:4030" ph="{...}" />
+                <marker date="1540368068097" expanded="true" signature="3553:3642" ph="{...}" />
+                <marker date="1540368068097" expanded="true" signature="3696:3778" ph="{...}" />
+                <marker date="1540368068097" expanded="true" signature="3856:4020" ph="{...}" />
+                <marker date="1540368068097" expanded="true" signature="4117:5162" ph="{...}" />
+                <marker date="1540368068097" expanded="true" signature="4239:4328" ph="{...}" />
+                <marker date="1540368068097" expanded="true" signature="4382:4464" ph="{...}" />
+                <marker date="1540368068097" expanded="true" signature="4675:5113" ph="{...}" />
+                <marker date="1540368068097" expanded="true" signature="4925:5099" ph="{...}" />
+                <marker date="1540368068097" expanded="true" signature="4999:5081" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UserAPI/Dto/TableUserDto.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UserAPI/Models/TableUser.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UserAPI/Program.cs">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/UserAPI/Helpers/AppSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/UserAPI/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/UserAPI/Services/UserService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/UserAPI/Controllers/UsersController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/UserAPI/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/UserAPI/Dto/TableUserDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/UserAPI/Models/TableUser.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/UserAPI/Controllers/UserController.cs" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/edaa9a20-978e-4501-a4e0-53b7257d00cb/console.sql" />
+        <option value="$PROJECT_DIR$/UserAPI/Helpers/AppSettings.cs" />
+        <option value="$PROJECT_DIR$/UserAPI/appsettings.json" />
+        <option value="$PROJECT_DIR$/UserAPI/Dto/TableUserDto.cs" />
+        <option value="$PROJECT_DIR$/UserAPI/Services/UserService.cs" />
+        <option value="$PROJECT_DIR$/UserAPI/Controllers/UsersController.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="993" />
+    <option name="y" value="25" />
+    <option name="width" value="927" />
+    <option name="height" value="1055" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="UserAPI" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="RiderNuGetCacheManager.AutoClear.global-packages" value="2" />
+    <property name="RiderNuGetCacheManager.AutoClear.http-cache" value="2" />
+    <property name="RiderNuGetCacheManager.AutoClear.packages-cache" value="2" />
+    <property name="RiderNuGetCacheManager.AutoClear.temp" value="1" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.console.LAST_STATE" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="RiderNuGetOptionsPageId" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <browser start="true" url="http://localhost:5000" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5b18362b-240f-4bd7-9e48-e85827474eca" name="Default Changelist" comment="" />
+      <created>1539000853367</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1539000853367</updated>
+      <workItem from="1539000867853" duration="941000" />
+      <workItem from="1539002203435" duration="3273000" />
+      <workItem from="1539006524733" duration="1019000" />
+      <workItem from="1540281995360" duration="6717000" />
+      <workItem from="1540366378442" duration="1822000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="13877000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16768125" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32972974" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32972974" />
+      <window_info anchor="bottom" id="NuGet" order="7" weight="0.32972974" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="10" weight="0.32972974" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" weight="0.32972974" />
+      <window_info anchor="bottom" id="REST Client" order="12" weight="0.32972974" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.32972974" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="15" visible="true" weight="0.46282247" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3325766" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.groovy">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserAPI/Controllers/UserController.cs" />
+    <entry file="das://edaa9a20-978e-4501-a4e0-53b7257d00cb/database/dfug8uq2aj17f1/schema/public/table/table_user" />
+    <entry file="file://$PROJECT_DIR$/UserAPI/Controllers/LoginController.cs" />
+    <entry file="file://$PROJECT_DIR$/UserAPI/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserAPI/Helpers/AppSettings.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserAPI/Controllers/ValuesController.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/edaa9a20-978e-4501-a4e0-53b7257d00cb/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="51" selection-start-column="51" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserAPI/Controllers/Usersystemcontroller.cs" />
+    <entry file="file://$PROJECT_DIR$/UserAPI/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserAPI/Dto/TableUserDto.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserAPI/Models/TableUser.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserAPI/Program.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserAPI/Services/UserService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+          <folding>
+            <marker date="1540368068097" expanded="false" signature="6:143" ph="..." />
+            <marker date="1540368068097" expanded="true" signature="171:5188" ph="{...}" />
+            <marker date="1540368068097" expanded="true" signature="207:467" ph="{...}" />
+            <marker date="1540368068097" expanded="true" signature="516:5186" ph="{...}" />
+            <marker date="1540368068097" expanded="true" signature="629:681" ph="{...}" />
+            <marker date="1540368068097" expanded="true" signature="754:1225" ph="{...}" />
+            <marker date="1540368068097" expanded="true" signature="958:1015" ph="{...}" />
+            <marker date="1540368068097" expanded="true" signature="1120:1177" ph="{...}" />
+            <marker date="1540368068097" expanded="true" signature="1291:2144" ph="{...}" />
+            <marker date="1540368068097" expanded="true" signature="1400:1498" ph="{...}" />
+            <marker date="1540368068097" expanded="true" signature="1638:1745" ph="{...}" />
+            <marker date="1540368068097" expanded="true" signature="2200:2259" ph="{...}" />
+            <marker date="1540368068097" expanded="true" signature="2319:2846" ph="{...}" />
+            <marker date="1540368068097" expanded="true" signature="2465:2510" ph="{...}" />
+            <marker date="1540368068097" expanded="true" signature="2547:2592" ph="{...}" />
+            <marker date="1540368068097" expanded="true" signature="2627:2672" ph="{...}" />
+            <marker date="1540368068097" expanded="true" signature="2711:2756" ph="{...}" />
+            <marker date="1540368068097" expanded="true" signature="2791:2836" ph="{...}" />
+            <marker date="1540368068097" expanded="true" signature="2939:3136" ph="{...}" />
+            <marker date="1540368068097" expanded="true" signature="3173:3394" ph="{...}" />
+            <marker date="1540368068097" expanded="true" signature="3267:3384" ph="{...}" />
+            <marker date="1540368068097" expanded="true" signature="3509:4030" ph="{...}" />
+            <marker date="1540368068097" expanded="true" signature="3553:3642" ph="{...}" />
+            <marker date="1540368068097" expanded="true" signature="3696:3778" ph="{...}" />
+            <marker date="1540368068097" expanded="true" signature="3856:4020" ph="{...}" />
+            <marker date="1540368068097" expanded="true" signature="4117:5162" ph="{...}" />
+            <marker date="1540368068097" expanded="true" signature="4239:4328" ph="{...}" />
+            <marker date="1540368068097" expanded="true" signature="4382:4464" ph="{...}" />
+            <marker date="1540368068097" expanded="true" signature="4675:5113" ph="{...}" />
+            <marker date="1540368068097" expanded="true" signature="4925:5099" ph="{...}" />
+            <marker date="1540368068097" expanded="true" signature="4999:5081" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserAPI/Controllers/UsersController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="790">
+          <caret line="100" column="43" lean-forward="true" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
+          <folding>
+            <marker date="1540368185785" expanded="false" signature="6:576" ph="..." />
+            <marker date="1540368185785" expanded="true" signature="607:3210" ph="{...}" />
+            <marker date="1540368185785" expanded="true" signature="707:3208" ph="{...}" />
+            <marker date="1540368185785" expanded="true" signature="949:1085" ph="{...}" />
+            <marker date="1540368185785" expanded="true" signature="1213:2256" ph="{...}" />
+            <marker date="1540368185785" expanded="true" signature="1337:1452" ph="{...}" />
+            <marker date="1540368185785" expanded="true" signature="1657:2014" ph="{...}" />
+            <marker date="1540368185785" expanded="true" signature="1732:1822" ph="{...}" />
+            <marker date="1540368185785" expanded="true" signature="2185:2243" ph="{...}" />
+            <marker date="1540368185785" expanded="true" signature="2384:2733" ph="{...}" />
+            <marker date="1540368185785" expanded="true" signature="2467:2585" ph="{...}" />
+            <marker date="1540368185785" expanded="true" signature="2629:2723" ph="{...}" />
+            <marker date="1540368185785" expanded="true" signature="2842:3201" ph="{...}" />
+            <marker date="1540368185785" expanded="true" signature="2868:3055" ph="{...}" />
+            <marker date="1540368185785" expanded="true" signature="2988:3039" ph="{...}" />
+            <marker date="1540368185785" expanded="true" signature="3099:3191" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

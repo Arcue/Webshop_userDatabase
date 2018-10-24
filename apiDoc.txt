@@ -1,0 +1,57 @@
+ALL RESPONSES AS JSON
+
+POST /login
+Request: JSON objekt med userinfo
+{
+	email:		string
+	password:	string
+}
+
+
+Response:
+{
+	x-auth-token: TOKEN-String
+}
+
+
+Register user
+Post /users
+Request:{
+	name:		string
+	email: 		string
+	password: 	string
+	homeadress:	string
+	postnumber:	string
+	city:		String
+}
+Response
+{
+	x-auth-token: TOKEN-String
+}
+
+Response: 200 OK
+
+Get user
+Get /user
+Headers: x-auth-token: TOKEN-String
+Response {
+	name:		string
+	email: 		string
+	homeadress:	string
+	postnummer:	string
+	city:		string
+}
+Edit userinfo
+
+Put /users/update
+Headers: x-auth-token: TOKEN-String 
+Request: {
+	name:		string
+	email:	 	string
+	password: 	string
+	homeadress:	string
+	postnumber:	string
+	city:		string
+}
+
+Response: 200 OK

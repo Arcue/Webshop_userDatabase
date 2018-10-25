@@ -1,5 +1,7 @@
 ALL RESPONSES AS JSON
 
+Base URL: https://webshop-userdb-api.herokuapp.com/Users
+
 POST /login
 Request: JSON objekt med userinfo
 {

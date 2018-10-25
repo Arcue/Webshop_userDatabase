@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
@@ -11,6 +12,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
+using Microsoft.Extensions.Logging.Debug;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
@@ -38,7 +40,7 @@ namespace UserAPI.Controllers
 
         [AllowAnonymous]
         [HttpPost("login")]
-        public IActionResult Authenticate([FromBody]TableUserDto userDto)
+        public async Task<IActionResult> Authenticate([FromBody]TableUserDto userDto)
         {
             var user = _userService.Authenticate(userDto.Email, userDto.Password);
             
@@ -74,7 +76,7 @@ namespace UserAPI.Controllers
 
         [AllowAnonymous]
         [HttpPost("register")]
-        public IActionResult Register([FromBody] TableUserDto userDto)
+        public async Task<IActionResult> Register([FromBody] TableUserDto userDto)
         {
             var user = _mapper.Map<TableUser>(userDto);
 
@@ -89,9 +91,29 @@ namespace UserAPI.Controllers
 
             }
         }
+        
+        //Hämtar användarinfo baserat på token
+        [HttpGet("user")]
+        public async Task<IActionResult> GetUser([FromRoute] String jsonToken)
+        {
+            String token = JsonConvert.DeserializeObject<String>(jsonToken);
+            try
+            {
+                
+                return Ok(new
+                {
+                    message = 123
+                });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new {message = token});
+            }
+            
+        }
 
         [HttpPost("update")]
-        public IActionResult Update([FromBody] String token)
+        public async Task<IActionResult> Update([FromBody] String token)
         {
             try
             {

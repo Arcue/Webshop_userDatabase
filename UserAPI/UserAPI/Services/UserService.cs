@@ -12,6 +12,7 @@ namespace UserAPI.Services
         TableUser Authenticate(string username, string password);
         TableUser Create(TableUser user, string password);
         IEnumerable<TableUser> GetAll();
+        TableUser GetUserInfo(String token);
         int Update(String token);
         void Delete(int id);
         void StoreToken(String token, int userId);
@@ -81,11 +82,17 @@ namespace UserAPI.Services
         //Hämtar userId baserat på token
         public int getUserId(String token)
         {
-            
             var user = _context.TableUser.SingleOrDefault(x => x.Authtoken.Equals(token));
             int userId = user.Userid;
             
             return userId;
+        }
+
+        public TableUser GetUserInfo(String token)
+        {
+            var user = _context.TableUser.Find(getUserId(token));
+
+            return user;
         }
 
 
@@ -98,6 +105,8 @@ namespace UserAPI.Services
                 _context.SaveChanges();
             }
         }
+        
+        
 
         private static void CreatePasswordHash(String password, out byte[] passwordHash, out byte[] passwordSalt)
         {

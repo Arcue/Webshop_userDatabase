@@ -5,6 +5,7 @@
     <e p="$APPLICATION_CONFIG_DIR$/consoles/ide" t="IncludeRecursive" />
     <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
     <e p="$USER_HOME$/.Rider2018.2/system/extResources" t="IncludeRecursive" />
+<<<<<<< HEAD
     <e p="$USER_HOME$/.Rider2018.2/system/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_UserAPI.-519645246.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="UserAPI" t="IncludeRecursive">
@@ -19,6 +20,22 @@
         <e p="Helpers" t="Include">
           <e p="AppSettings.cs" t="Include" />
           <e p="AutoMapper.cs" t="Include" />
+=======
+    <e p="$USER_HOME$/.Rider2018.2/system/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_UserAPI.-617124937.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="UserAPI" t="IncludeRecursive">
+        <e p="Controllers" t="Include">
+          <e p="LoginController.cs" t="Include" />
+          <e p="UsersController.cs" t="Include" />
+          <e p="Usersystemcontroller.cs" t="Include" />
+          <e p="ValuesController.cs" t="Include" />
+        </e>
+        <e p="Dto" t="Include">
+          <e p="TableUserDto.cs" t="Include" />
+        </e>
+        <e p="Helpers" t="Include">
+          <e p="AppSettings.cs" t="Include" />
+>>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
         </e>
         <e p="Models" t="Include">
           <e p="TableUser.cs" t="Include" />

@@ -7273,7 +7273,11 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration/2.1.1": {
+<<<<<<< HEAD
       "sha512": "xvNRQmZOYfuReVC9trT8sTYVRm7yJzI5z1YZ4iO6Im/EWOWoqqLNoYG0sY8EHnp4DOtioGJ/hmJ+ksqaJN8aBA==",
+=======
+      "sha512": "EJkd4EOM2FrT1qWo5Z/LsmTxmiZBC6reETLAXnF6CG/c1IeZqRP/PY6PuyOz67LS5McOJ706egnLktJ23XVvEQ==",
+>>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration/2.1.1",
       "files": [
@@ -7285,7 +7289,11 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Contracts/2.1.1": {
+<<<<<<< HEAD
       "sha512": "Su++Q22kR3EaWmg7flhuAX0xZFPVL4z99HYc9CNQZksi4L/lCzxyIRXJUV3qTEyyX8wkl6sx3RDVUcYcBTdjlg==",
+=======
+      "sha512": "mlO1U3Bt05P/oDa0STUtV6mOKlsXyCO2Nu0YKYmuhLxSw8sN6XMQ7ucoHA4YP3d/lVLvqRWnlEy8H8/AH21dOw==",
+>>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.contracts/2.1.1",
       "files": [
@@ -7297,7 +7305,11 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Core/2.1.1": {
+<<<<<<< HEAD
       "sha512": "uIhfMpJOjQi/fBtKglWDP8lSuiX5AOQwomCS6hZ37EzKB5tMnaH+Z7DbkEFoZLaGcLDaskoOJ0nhIjA9A2i0Rg==",
+=======
+      "sha512": "AakHxdXgfX4BSEYMuQ6Yu/bT8LEhbQX69mcbIWYvbBcNZ2YR98mmU7NstLDzqhk2pkVqp29KFLmxzgVV39QKAQ==",
+>>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.core/2.1.1",
       "files": [
@@ -7309,7 +7321,11 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Design/2.1.1": {
+<<<<<<< HEAD
       "sha512": "d4xk6rWvW9HR2/QdwQ7OfrbmQcMi4EE3IlZT3JwfIRFdbtCXDFz+PCjs/qomLC+d+vlEXZuPvneX+G5FF9d1MA==",
+=======
+      "sha512": "wkcgKiinxx9CW8SiABMXV1HUgb9DE7kQ8F9440R8WxLLiTsutn/a2ORzd6W38psFJq2VXc6jNXjXO9wasgnocg==",
+>>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.design/2.1.1",
       "files": [
@@ -7331,7 +7347,11 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/2.1.1": {
+<<<<<<< HEAD
       "sha512": "03wiQubZKezzT5OKgnExDOnzrtn/TQG4QDQfOJI524yZ2CCC/h4PxtPmO5FDH7x1qP/99EXLaZYojE9fZ7u9Yw==",
+=======
+      "sha512": "jKSk/wr0RUSlZsqqLr7UmNvfbMC8j18xxG9iEJoCoN5wgEzq/Yd9FFF9FAYDI3IWEQSKFH0IYOx8WrzwmQ7nqw==",
+>>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.entityframeworkcore/2.1.1",
       "files": [
@@ -7344,7 +7364,11 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Templating/2.1.1": {
+<<<<<<< HEAD
       "sha512": "8rubHXs2ufTJ205H2c9aSga/X8ToURtGguISBHEGkAcz/1Qp922jAaGvGvvJNhoXiBg/9K5VupkfkJDvnhN3/Q==",
+=======
+      "sha512": "7lOJU7JLaWZ6GmlLDsIVrjRWfUaYesclLRS8t8aqg5+KvNhasZ6JyfrQI4uiE2b7jXV8YegN9BWmXsp/Nhya3w==",
+>>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.templating/2.1.1",
       "files": [
@@ -7356,7 +7380,11 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Utils/2.1.1": {
+<<<<<<< HEAD
       "sha512": "MRtBhRi0CQ36yi9r08l/j7I24a2bfiAW9N6fSq69M5mZFw1vjijPaM2NPokWv9hqT0aUCLNKCX7A6E20XgYE1w==",
+=======
+      "sha512": "WgaLZas8Uhcad1RFgf1b6Vm8YYaGnK2vfov+4zrz7IPiN6RehtT5nsBJBYblpN1ET0zJdcXJ91p3Y1ox+Le4bg==",
+>>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.utils/2.1.1",
       "files": [
@@ -7368,7 +7396,11 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGenerators.Mvc/2.1.1": {
+<<<<<<< HEAD
       "sha512": "LhsJrKf4fMqOyaVqAexbpkR6GmHDuVeek+s1NFGwFYFZAgSbnLmBt8DIw41zGbEXO/GYiPLTOTA7F1fJknsf6g==",
+=======
+      "sha512": "kwj2oBltHrD/W2ELyvkENjGpw62m1w3KplCfH9zLcgtE1r6oHtp5Hzf19It756Q1hHfTWfYZmzBySu7yRENyLQ==",
+>>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
       "type": "package",
       "path": "microsoft.visualstudio.web.codegenerators.mvc/2.1.1",
       "files": [
@@ -12633,12 +12665,18 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "/home/jolle/.nuget/packages/": {},
     "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
+=======
+    "C:\\Users\\Joel\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+>>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "/home/jolle/Desktop/usersystemapi/usersystemapi/UserAPI/UserAPI/UserAPI.csproj",
       "projectName": "UserAPI",
       "projectPath": "/home/jolle/Desktop/usersystemapi/usersystemapi/UserAPI/UserAPI/UserAPI.csproj",
@@ -12650,11 +12688,29 @@
       ],
       "configFilePaths": [
         "/home/jolle/.config/NuGet/NuGet.Config"
+=======
+      "projectUniqueName": "C:\\Users\\Joel\\Desktop\\usersystemapi\\UserAPI\\UserAPI\\UserAPI.csproj",
+      "projectName": "UserAPI",
+      "projectPath": "C:\\Users\\Joel\\Desktop\\usersystemapi\\UserAPI\\UserAPI\\UserAPI.csproj",
+      "packagesPath": "C:\\Users\\Joel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Joel\\Desktop\\usersystemapi\\UserAPI\\UserAPI\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Joel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+>>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
+<<<<<<< HEAD
+=======
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+>>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -12698,7 +12754,10 @@
             "version": "[2.1.1, )"
           },
           "Microsoft.NETCore.App": {
+<<<<<<< HEAD
             "suppressParent": "All",
+=======
+>>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true

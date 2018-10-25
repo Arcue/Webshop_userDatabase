@@ -94,24 +94,23 @@ namespace UserAPI.Controllers
         
         //Hämtar användarinfo baserat på token
         [HttpGet("user")]
-        public async Task<IActionResult> GetUser([FromRoute] String jsonToken)
+        public async Task<IActionResult> GetUser([FromHeader] String authtoken)
         {
-            String token = JsonConvert.DeserializeObject<String>(jsonToken);
             try
             {
-                
+                TableUser user = _userService.GetUserInfo(authtoken);
                 return Ok(new
                 {
-                    message = 123
+                    message = user.Userid
                 });
             }
             catch (Exception ex)
             {
-                return BadRequest(new {message = token});
+                return BadRequest(new {message = authtoken});
             }
             
         }
-
+        
         [HttpPost("update")]
         public async Task<IActionResult> Update([FromBody] String token)
         {

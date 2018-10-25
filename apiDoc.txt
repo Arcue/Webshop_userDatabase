@@ -35,6 +35,7 @@ Get user
 Get /user
 Headers: x-auth-token: TOKEN-String
 Response {
+	userId:		int
 	name:		string
 	email: 		string
 	homeadress:	string

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
+using Newtonsoft.Json;
 using UserAPI.Dto;
 using UserAPI.Models;
 
@@ -13,7 +14,7 @@ namespace UserAPI.Services
         TableUser Create(TableUser user, string password);
         IEnumerable<TableUser> GetAll();
         TableUser GetUserInfo(String token);
-        TableUser Update(String token);
+        TableUser Update(String token, String newUserInfo);
         void Delete(int id);
         void StoreToken(String token, int userId);
     }
@@ -74,7 +75,7 @@ namespace UserAPI.Services
             return _context.TableUser;
         }
 
-        public TableUser Update(string token)
+        public TableUser Update(string token, String newUserInfo)
         {
             int userId = getUserId(token);
 
@@ -85,6 +86,47 @@ namespace UserAPI.Services
             else
             {
                 var user = _context.TableUser.Find(userId);
+
+                UpdateUserInfoDto jsonInfo = JsonConvert.DeserializeObject<UpdateUserInfoDto>(newUserInfo);
+
+                if (jsonInfo.name != null)
+                {
+                    user.Username = jsonInfo.name;
+                }
+                
+                if (jsonInfo.Email!= null)
+                {
+                    user.Email = jsonInfo.Email;
+                }
+                
+                if (jsonInfo.password!= null)
+                {
+                    //Måste hasha password!!!!
+                    user.Password = jsonInfo.password;
+                }
+                
+                if (jsonInfo.homeadress != null)
+                {
+                    user.Adress = jsonInfo.homeadress;
+                }
+                
+                if (jsonInfo.postnumber != null)
+                {
+                    user.Postnummer = jsonInfo.postnumber;
+                }
+                if (jsonInfo.city != null)
+                {
+                    user.Stad = jsonInfo.city;
+                }
+                
+                //Detta kan vara orsakan att det är fel
+                //Måste kanske sätta in userId för att den ska hitta rätt
+                _context.TableUser.Update(user);
+                _context.SaveChanges();
+                
+                
+               
+                
                
                 return  user;
             }

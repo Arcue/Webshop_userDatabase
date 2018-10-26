@@ -112,11 +112,11 @@ namespace UserAPI.Controllers
         }
         
         [HttpPost("update")]
-        public async Task<IActionResult> Update([FromBody] String token)
+        public async Task<IActionResult> Update([FromHeader] String token, [FromBody] String newUserInfo)
         {
             try
             {
-                int id = _userService.Update(token);
+                TableUser id = _userService.Update(token, newUserInfo);
                 return Ok(new
                 {
                     userId = id

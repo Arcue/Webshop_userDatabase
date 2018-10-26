@@ -116,15 +116,11 @@ namespace UserAPI.Controllers
         {
             try
             {
-                TableUser id = _userService.Update(token, newUserInfo);
-                return Ok(new
-                {
-                    userId = id
-                });
+                _userService.Update(token, newUserInfo);
+                return Ok();
             }
             catch (ApplicationException ex)
             {
-
                 return BadRequest(new {message = ex.Message});
             }
         }

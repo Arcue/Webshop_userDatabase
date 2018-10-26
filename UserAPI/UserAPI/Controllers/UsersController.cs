@@ -111,7 +111,7 @@ namespace UserAPI.Controllers
             
         }
         
-        [HttpPost("update")]
+        [HttpPut("update")]
         public async Task<IActionResult> Update([FromHeader] String token, [FromBody] String newUserInfo)
         {
             try

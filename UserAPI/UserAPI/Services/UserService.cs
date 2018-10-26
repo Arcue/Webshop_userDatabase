@@ -13,7 +13,7 @@ namespace UserAPI.Services
         TableUser Create(TableUser user, string password);
         IEnumerable<TableUser> GetAll();
         TableUser GetUserInfo(String token);
-        int Update(String token);
+        TableUser Update(String token);
         void Delete(int id);
         void StoreToken(String token, int userId);
     }
@@ -74,9 +74,23 @@ namespace UserAPI.Services
             return _context.TableUser;
         }
 
-        public int Update(string token)
+        public TableUser Update(string token)
         {
-            return getUserId(token);
+            int userId = getUserId(token);
+
+            if (userId == null)
+            {
+                throw new ArgumentNullException("password");
+            }
+            else
+            {
+                var user = _context.TableUser.Find(userId);
+               
+                return  user;
+            }
+
+            
+            
         }
         
         //Hämtar userId baserat på token

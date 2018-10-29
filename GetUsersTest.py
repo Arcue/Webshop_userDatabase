@@ -14,8 +14,5 @@ class TestingMethod(unittest.TestCase):
 
         self.assertEqual(response.status_code, b)
 
-if __name__ == '__main__':
-    unittest.main()
-
 
 

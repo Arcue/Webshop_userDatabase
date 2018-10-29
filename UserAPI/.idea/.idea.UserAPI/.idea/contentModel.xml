@@ -15,6 +15,7 @@
         </e>
         <e p="Dto" t="Include">
           <e p="TableUserDto.cs" t="Include" />
+          <e p="UpdateUserInfoDto.cs" t="Include" />
           <e p="UserInfotDto.cs" t="Include" />
         </e>
         <e p="Helpers" t="Include">

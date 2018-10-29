@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+using Newtonsoft.Json;
+>>>>>>> ae99173f8e5e7426f0e78d12bf0628a3500208e5
 using UserAPI.Dto;
 =======
 >>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
@@ -17,7 +21,7 @@ namespace UserAPI.Services
         IEnumerable<TableUser> GetAll();
 <<<<<<< HEAD
         TableUser GetUserInfo(String token);
-        int Update(String token);
+        TableUser Update(String token, String newUserInfo);
         void Delete(int id);
         void StoreToken(String token, int userId);
 =======
@@ -83,9 +87,68 @@ namespace UserAPI.Services
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         public int Update(string token)
+=======
+        public TableUser Update(string token, String newUserInfo)
+>>>>>>> ae99173f8e5e7426f0e78d12bf0628a3500208e5
         {
-            return getUserId(token);
+            int userId = getUserId(token);
+
+            if (userId == null)
+            {
+                throw new ArgumentNullException("password");
+            }
+            else
+            {
+                var user = _context.TableUser.Find(userId);
+
+                UpdateUserInfoDto jsonInfo = JsonConvert.DeserializeObject<UpdateUserInfoDto>(newUserInfo);
+
+                if (jsonInfo.name != null)
+                {
+                    user.Username = jsonInfo.name;
+                }
+                
+                if (jsonInfo.Email!= null)
+                {
+                    user.Email = jsonInfo.Email;
+                }
+                
+                if (jsonInfo.password!= null)
+                {
+                    //Måste hasha password!!!!
+                    user.Password = jsonInfo.password;
+                }
+                
+                if (jsonInfo.homeadress != null)
+                {
+                    user.Adress = jsonInfo.homeadress;
+                }
+                
+                if (jsonInfo.postnumber != null)
+                {
+                    user.Postnummer = jsonInfo.postnumber;
+                }
+                if (jsonInfo.city != null)
+                {
+                    user.Stad = jsonInfo.city;
+                }
+                
+                //Detta kan vara orsakan att det är fel
+                //Måste kanske sätta in userId för att den ska hitta rätt
+                _context.TableUser.Update(user);
+                _context.SaveChanges();
+                
+                
+               
+                
+               
+                return  user;
+            }
+
+            
+            
         }
         
         //Hämtar userId baserat på token

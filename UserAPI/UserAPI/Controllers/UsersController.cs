@@ -133,20 +133,16 @@ namespace UserAPI.Controllers
             
         }
         
-        [HttpPost("update")]
-        public async Task<IActionResult> Update([FromBody] String token)
+        [HttpPut("update")]
+        public async Task<IActionResult> Update([FromHeader] String token, [FromBody] String newUserInfo)
         {
             try
             {
-                int id = _userService.Update(token);
-                return Ok(new
-                {
-                    userId = id
-                });
+                _userService.Update(token, newUserInfo);
+                return Ok();
             }
             catch (ApplicationException ex)
             {
-
                 return BadRequest(new {message = ex.Message});
             }
         }

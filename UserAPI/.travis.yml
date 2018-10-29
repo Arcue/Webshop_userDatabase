@@ -9,4 +9,4 @@ python:
 install:
   - pip install .
 # command to run tests
-script: pythonTests/GetUsers.py
+script: GetUsers.py

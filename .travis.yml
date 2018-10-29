@@ -7,4 +7,5 @@ python:
 install:
   - pip install .
 # command to run tests
-script: GetUsersTest.py
+script: 
+  - GetUsersTest

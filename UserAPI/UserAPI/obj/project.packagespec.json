@@ -1,10 +1,17 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
+<<<<<<< HEAD
     "projectUniqueName": "/home/jolle/Desktop/usersystemapi/usersystemapi/UserAPI/UserAPI/UserAPI.csproj",
     "projectName": "UserAPI",
     "projectPath": "/home/jolle/Desktop/usersystemapi/usersystemapi/UserAPI/UserAPI/UserAPI.csproj",
     "outputPath": "/home/jolle/Desktop/usersystemapi/usersystemapi/UserAPI/UserAPI/obj/",
+=======
+    "projectUniqueName": "/home/jolle/Desktop/usersystem/UserAPI/UserAPI/UserAPI.csproj",
+    "projectName": "UserAPI",
+    "projectPath": "/home/jolle/Desktop/usersystem/UserAPI/UserAPI/UserAPI.csproj",
+    "outputPath": "/home/jolle/Desktop/usersystem/UserAPI/UserAPI/obj/",
+>>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/share/dotnet/sdk/NuGetFallbackFolder"
@@ -30,10 +37,13 @@
           "target": "Package",
           "version": "[7.0.1, )"
         },
+<<<<<<< HEAD
         "AutoMapper.Extensions.Microsoft.DependencyInjection": {
           "target": "Package",
           "version": "[5.0.1, )"
         },
+=======
+>>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
         "EntityFramework": {
           "target": "Package",
           "version": "[6.2.0, )"

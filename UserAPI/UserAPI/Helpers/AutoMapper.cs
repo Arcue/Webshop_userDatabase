@@ -14,10 +14,13 @@ namespace UserAPI.Helpers
         {
             CreateMap<TableUser, TableUserDto>();
             CreateMap<TableUserDto, TableUser>();
+<<<<<<< HEAD
             
             CreateMap<TableUser, UserInfotDto>();
             CreateMap<TableUserDto, TableUser>();
             
+=======
+>>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
         }
         
     }

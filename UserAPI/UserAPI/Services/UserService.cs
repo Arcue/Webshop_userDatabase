@@ -2,8 +2,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 using Newtonsoft.Json;
+>>>>>>> ae99173f8e5e7426f0e78d12bf0628a3500208e5
 using UserAPI.Dto;
+=======
+>>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
 using UserAPI.Models;
 
 namespace UserAPI.Services
@@ -13,10 +19,15 @@ namespace UserAPI.Services
         TableUser Authenticate(string username, string password);
         TableUser Create(TableUser user, string password);
         IEnumerable<TableUser> GetAll();
+<<<<<<< HEAD
         TableUser GetUserInfo(String token);
         TableUser Update(String token, String newUserInfo);
         void Delete(int id);
         void StoreToken(String token, int userId);
+=======
+        void Update(TableUser user, string password = null);
+        void Delete(int id);
+>>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
     }
     
     public class UserService : IUserService
@@ -75,7 +86,12 @@ namespace UserAPI.Services
             return _context.TableUser;
         }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+        public int Update(string token)
+=======
         public TableUser Update(string token, String newUserInfo)
+>>>>>>> ae99173f8e5e7426f0e78d12bf0628a3500208e5
         {
             int userId = getUserId(token);
 
@@ -152,6 +168,13 @@ namespace UserAPI.Services
         }
 
 
+=======
+        public void Update(TableUser user, String password = null)
+        {
+            
+        }
+
+>>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
         public void Delete(int id)
         {
             var user = _context.TableUser.Find((id));
@@ -161,8 +184,11 @@ namespace UserAPI.Services
                 _context.SaveChanges();
             }
         }
+<<<<<<< HEAD
         
         
+=======
+>>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
 
         private static void CreatePasswordHash(String password, out byte[] passwordHash, out byte[] passwordSalt)
         {
@@ -212,6 +238,7 @@ namespace UserAPI.Services
                     }
                 }
             }
+<<<<<<< HEAD
             return true;
         }
 
@@ -227,6 +254,11 @@ namespace UserAPI.Services
             user.Authtoken = token;
             _context.TableUser.Update(user);
             _context.SaveChanges();
+=======
+
+            
+            return true;
+>>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
         }
         
         

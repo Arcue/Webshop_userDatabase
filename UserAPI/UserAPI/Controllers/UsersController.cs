@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+<<<<<<< HEAD
 using System.Diagnostics;
+=======
+>>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
@@ -12,7 +15,10 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
+<<<<<<< HEAD
 using Microsoft.Extensions.Logging.Debug;
+=======
+>>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
@@ -40,10 +46,16 @@ namespace UserAPI.Controllers
 
         [AllowAnonymous]
         [HttpPost("login")]
+<<<<<<< HEAD
         public async Task<IActionResult> Authenticate([FromBody]TableUserDto userDto)
         {
             var user = _userService.Authenticate(userDto.Email, userDto.Password);
             
+=======
+        public IActionResult Authenticate([FromBody]TableUserDto userDto)
+        {
+            var user = _userService.Authenticate(userDto.Email, userDto.Password);
+>>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
 
             if (user == null)
             {
@@ -64,9 +76,13 @@ namespace UserAPI.Controllers
 
             var token = tokenHandler.CreateToken(tokenDescriptor);
             var tokenString = tokenHandler.WriteToken(token);
+<<<<<<< HEAD
             //Spara token i user databasen
             _userService.StoreToken(tokenString, user.Userid);
             
+=======
+
+>>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
             return Ok(new
             {
                 x_auth_token = tokenString
@@ -74,9 +90,14 @@ namespace UserAPI.Controllers
 
         }
 
+<<<<<<< HEAD
         [AllowAnonymous]
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] TableUserDto userDto)
+=======
+        [HttpPost("register")]
+        public IActionResult Register([FromBody] TableUserDto userDto)
+>>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
         {
             var user = _mapper.Map<TableUser>(userDto);
 
@@ -91,6 +112,7 @@ namespace UserAPI.Controllers
 
             }
         }
+<<<<<<< HEAD
         
         //Hämtar användarinfo baserat på token
         [HttpGet("user")]
@@ -124,6 +146,8 @@ namespace UserAPI.Controllers
                 return BadRequest(new {message = ex.Message});
             }
         }
+=======
+>>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
 
     }
 }

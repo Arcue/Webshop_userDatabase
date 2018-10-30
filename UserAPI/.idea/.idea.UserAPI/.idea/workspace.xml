@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="5b18362b-240f-4bd7-9e48-e85827474eca" name="Default Changelist" comment="">
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -21,6 +22,9 @@
       <change beforePath="$PROJECT_DIR$/UserAPI/Controllers/UsersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserAPI/Controllers/UsersController.cs" afterDir="false" />
 >>>>>>> ae99173f8e5e7426f0e78d12bf0628a3500208e5
     </list>
+=======
+    <list default="true" id="5b18362b-240f-4bd7-9e48-e85827474eca" name="Default Changelist" comment="" />
+>>>>>>> be061c88b437b97f18c308bf36fc4471e1982c8d
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,14 +139,15 @@
     <session id="591447444">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.109" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.52" value="1" />
           <entry key="project.open.time.54" value="1" />
           <entry key="project.open.time.75" value="1" />
           <entry key="project.open.time.83" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -157,12 +162,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="5" />
+          <entry key="cs" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="5" />
+          <entry key="C#" value="6" />
         </counts>
       </usages-collector>
     </session>
@@ -175,7 +180,11 @@
         <entry file="file://$PROJECT_DIR$/UserAPI/Startup.cs">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="540">
+=======
+            <state>
+>>>>>>> be061c88b437b97f18c308bf36fc4471e1982c8d
               <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
 =======
             <state relative-caret-position="396">
@@ -197,14 +206,18 @@
       </file>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
 =======
       <file pinned="false" current-in-tab="true">
 >>>>>>> ae99173f8e5e7426f0e78d12bf0628a3500208e5
+=======
+      <file pinned="false" current-in-tab="false">
+>>>>>>> be061c88b437b97f18c308bf36fc4471e1982c8d
         <entry file="file://$PROJECT_DIR$/UserAPI/Controllers/UsersController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="611">
-              <caret line="117" column="13" selection-start-line="117" selection-start-column="13" selection-end-line="117" selection-end-column="13" />
+            <state relative-caret-position="865">
+              <caret line="119" column="24" lean-forward="true" selection-start-line="119" selection-start-column="24" selection-end-line="119" selection-end-column="24" />
               <folding>
 <<<<<<< HEAD
                 <marker date="1540467082890" expanded="false" signature="6:644" ph="..." />
@@ -327,7 +340,7 @@
 >>>>>>> ae99173f8e5e7426f0e78d12bf0628a3500208e5
         <entry file="file://$PROJECT_DIR$/UserAPI/Services/UserService.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-96">
+            <state relative-caret-position="1454">
               <caret line="133" column="12" selection-start-line="133" selection-start-column="12" selection-end-line="133" selection-end-column="12" />
               <folding>
 <<<<<<< HEAD
@@ -438,6 +451,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -506,10 +520,13 @@
       </file>
       <file pinned="false" current-in-tab="false">
 <<<<<<< HEAD
+=======
+      <file pinned="false" current-in-tab="true">
+>>>>>>> be061c88b437b97f18c308bf36fc4471e1982c8d
         <entry file="file://$PROJECT_DIR$/UserAPI/Dto/TableUserDto.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="10" selection-end-column="40" />
+            <state relative-caret-position="180">
+              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
               <folding>
                 <marker date="1540456131122" expanded="true" signature="21:367" ph="{...}" />
                 <marker date="1540456131122" expanded="true" signature="53:365" ph="{...}" />
@@ -529,6 +546,7 @@
         </entry>
       </file>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UserAPI/Models/TableUser.cs">
           <provider selected="true" editor-type-id="text-editor">
@@ -543,6 +561,8 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
+=======
+>>>>>>> be061c88b437b97f18c308bf36fc4471e1982c8d
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -615,6 +635,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="6">
 <<<<<<< HEAD
     <option name="x" value="660" />
@@ -630,6 +651,10 @@
 >>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
 =======
     <option name="x" value="67" />
+=======
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="993" />
+>>>>>>> be061c88b437b97f18c308bf36fc4471e1982c8d
     <option name="y" value="25" />
     <option name="width" value="927" />
     <option name="height" value="1055" />
@@ -641,7 +666,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -692,6 +716,7 @@
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
+      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -784,12 +809,18 @@
 >>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
 =======
       <workItem from="1540537353671" duration="758000" />
+<<<<<<< HEAD
       <workItem from="1540543525962" duration="1763000" />
 >>>>>>> ae99173f8e5e7426f0e78d12bf0628a3500208e5
+=======
+      <workItem from="1540543525962" duration="2282000" />
+      <workItem from="1540806863377" duration="2444000" />
+>>>>>>> be061c88b437b97f18c308bf36fc4471e1982c8d
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="26142000" />
@@ -799,6 +830,9 @@
 =======
     <option name="totallyTimeSpent" value="28663000" />
 >>>>>>> ae99173f8e5e7426f0e78d12bf0628a3500208e5
+=======
+    <option name="totallyTimeSpent" value="31626000" />
+>>>>>>> be061c88b437b97f18c308bf36fc4471e1982c8d
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -810,6 +844,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
@@ -824,6 +859,11 @@
 =======
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16380742" />
 >>>>>>> ae99173f8e5e7426f0e78d12bf0628a3500208e5
+=======
+    <frame x="993" y="25" width="927" height="1055" extended-state="4" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2383655" />
+>>>>>>> be061c88b437b97f18c308bf36fc4471e1982c8d
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1072,27 +1112,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/UserAPI/Startup.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
+        <state>
           <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UserAPI/Models/TableUser.cs">
+    <entry file="file://$PROJECT_DIR$/UserAPI/Dto/UserInfotDto.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="41" />
+        <state relative-caret-position="135">
+          <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+          <folding>
+            <marker date="1540467206072" expanded="true" signature="21:322" ph="{...}" />
+            <marker date="1540467206072" expanded="true" signature="53:320" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/UserAPI/Program.cs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
 >>>>>>> ae99173f8e5e7426f0e78d12bf0628a3500208e5
     <entry file="file://$PROJECT_DIR$/UserAPI/Dto/TableUserDto.cs">
+=======
+    <entry file="file://$PROJECT_DIR$/UserAPI/Dto/UpdateUserInfoDto.cs">
+>>>>>>> be061c88b437b97f18c308bf36fc4471e1982c8d
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="10" selection-end-column="40" />
+        <state>
+          <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
           <folding>
+<<<<<<< HEAD
             <marker date="1540456131122" expanded="true" signature="21:367" ph="{...}" />
             <marker date="1540456131122" expanded="true" signature="53:365" ph="{...}" />
 =======
@@ -1127,12 +1176,17 @@
             <marker date="1540287652609" expanded="true" signature="4137:4311" ph="{...}" />
             <marker date="1540287652609" expanded="true" signature="4211:4293" ph="{...}" />
 >>>>>>> c97239a217eaee684f79b15c3d37c53fcd0fbc44
+=======
+            <marker date="1540544339420" expanded="true" signature="21:332" ph="{...}" />
+            <marker date="1540544339420" expanded="true" signature="58:330" ph="{...}" />
+>>>>>>> be061c88b437b97f18c308bf36fc4471e1982c8d
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UserAPI/Dto/UserInfotDto.cs">
+    <entry file="file://$PROJECT_DIR$/UserAPI/Models/TableUser.cs">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="195">
@@ -1140,19 +1194,24 @@
 =======
         <state relative-caret-position="60">
           <caret line="4" selection-start-line="4" selection-end-line="9" selection-end-column="40" />
+=======
+        <state relative-caret-position="285">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+>>>>>>> be061c88b437b97f18c308bf36fc4471e1982c8d
           <folding>
-            <marker date="1540467206072" expanded="true" signature="21:322" ph="{...}" />
-            <marker date="1540467206072" expanded="true" signature="53:320" ph="{...}" />
+            <marker date="1540311331000" expanded="false" signature="6:47" ph="..." />
+            <marker date="1540311331000" expanded="true" signature="73:611" ph="{...}" />
+            <marker date="1540311331000" expanded="true" signature="110:609" ph="{...}" />
           </folding>
 >>>>>>> ae99173f8e5e7426f0e78d12bf0628a3500208e5
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UserAPI/Dto/UpdateUserInfoDto.cs">
+    <entry file="file://$PROJECT_DIR$/UserAPI/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        <state>
           <folding>
+<<<<<<< HEAD
 <<<<<<< HEAD
             <marker date="1540311331000" expanded="false" signature="6:220" ph="..." />
             <marker date="1540311331000" expanded="true" signature="251:3597" ph="{...}" />
@@ -1191,6 +1250,12 @@
             <marker date="1540544339420" expanded="true" signature="21:332" ph="{...}" />
             <marker date="1540544339420" expanded="true" signature="58:330" ph="{...}" />
 >>>>>>> ae99173f8e5e7426f0e78d12bf0628a3500208e5
+=======
+            <marker date="1540311331000" expanded="false" signature="6:297" ph="..." />
+            <marker date="1540311331000" expanded="true" signature="316:979" ph="{...}" />
+            <marker date="1540311331000" expanded="true" signature="343:977" ph="{...}" />
+            <marker date="1540311331000" expanded="true" signature="396:806" ph="{...}" />
+>>>>>>> be061c88b437b97f18c308bf36fc4471e1982c8d
           </folding>
         </state>
       </provider>
@@ -1202,7 +1267,7 @@
     <entry file="file://$PROJECT_DIR$/UserAPI/Services/UserService.cs">
 >>>>>>> ae99173f8e5e7426f0e78d12bf0628a3500208e5
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-96">
+        <state relative-caret-position="1454">
           <caret line="133" column="12" selection-start-line="133" selection-start-column="12" selection-end-line="133" selection-end-column="12" />
           <folding>
 <<<<<<< HEAD
@@ -1286,8 +1351,8 @@
     <entry file="file://$PROJECT_DIR$/UserAPI/Controllers/UsersController.cs">
 >>>>>>> ae99173f8e5e7426f0e78d12bf0628a3500208e5
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="117" column="13" selection-start-line="117" selection-start-column="13" selection-end-line="117" selection-end-column="13" />
+        <state relative-caret-position="865">
+          <caret line="119" column="24" lean-forward="true" selection-start-line="119" selection-start-column="24" selection-end-line="119" selection-end-column="24" />
           <folding>
 <<<<<<< HEAD
             <marker date="1540457010987" expanded="false" signature="6:143" ph="..." />
@@ -1355,6 +1420,17 @@
             <marker date="1540546265423" expanded="true" signature="3667:3781" ph="{...}" />
             <marker date="1540546265423" expanded="true" signature="3825:3916" ph="{...}" />
 >>>>>>> ae99173f8e5e7426f0e78d12bf0628a3500208e5
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserAPI/Dto/TableUserDto.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <marker date="1540456131122" expanded="true" signature="21:367" ph="{...}" />
+            <marker date="1540456131122" expanded="true" signature="53:365" ph="{...}" />
           </folding>
         </state>
       </provider>

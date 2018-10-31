@@ -6,7 +6,7 @@ namespace UserAPI.Models
     public partial class TableUser
     {
         public int Userid { get; set; }
-        public string Authtoken { get; set; }
+        public string x_auth_token { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
         public string Hashedpassword { get; set; }

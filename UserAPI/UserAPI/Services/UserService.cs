@@ -32,7 +32,8 @@ namespace UserAPI.Services
         {
             var user = _context.TableUser.SingleOrDefault(x => x.Username == username);
             
-            //Kollar om användarnamnet redan finns i databasen
+            //Kollar om användarnamnet rauth
+            //edan finns i databasen
             if (user == null)
             {
                 return null;
@@ -138,7 +139,7 @@ namespace UserAPI.Services
         //Hämtar userId baserat på token
         public int getUserId(String token)
         {
-            var user = _context.TableUser.SingleOrDefault(x => x.Authtoken.Equals(token));
+            var user = _context.TableUser.SingleOrDefault(x => x.x_auth_token.Equals(token));
             int userId = user.Userid;
             
             return userId;
@@ -224,7 +225,7 @@ namespace UserAPI.Services
                 throw new ApplicationException("User not found");
             }
             
-            user.Authtoken = token;
+            user.x_auth_token = token;
             _context.TableUser.Update(user);
             _context.SaveChanges();
         }

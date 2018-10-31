@@ -94,11 +94,11 @@ namespace UserAPI.Controllers
         
         //Hämtar användarinfo baserat på token
         [HttpGet("user")]
-        public async Task<IActionResult> GetUser([FromHeader] String authtoken)
+        public async Task<IActionResult> GetUser([FromHeader] String x_auth_token)
         {
             try
             {
-                TableUser user = _userService.GetUserInfo(authtoken);
+                TableUser user = _userService.GetUserInfo(x_auth_token);
                 return Ok(new
                 {
                     message = user.Userid
@@ -106,7 +106,7 @@ namespace UserAPI.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(new {message = authtoken});
+                return BadRequest(new {message = x_auth_token});
             }
             
         }

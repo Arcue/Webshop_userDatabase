@@ -42,9 +42,9 @@ namespace UserAPI.Models
                     .IsRequired()
                     .HasColumnName("adress");
 
-                entity.Property(e => e.Authtoken)
+                entity.Property(e => e.x_auth_token)
                     .IsRequired()
-                    .HasColumnName("authtoken");
+                    .HasColumnName("x_auth_token");
 
                 entity.Property(e => e.Email)
                     .IsRequired()

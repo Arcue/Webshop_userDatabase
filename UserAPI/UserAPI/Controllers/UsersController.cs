@@ -84,11 +84,10 @@ namespace UserAPI.Controllers
         public IActionResult Register([FromBody] TableUserDto userDto)
 
         {
-            var user = _mapper.Map<TableUser>(userDto);
 
             try
             {
-                _userService.Create(user, userDto.Password);
+                _userService.Create(userDto, userDto.Password);
                 return Ok();
             }
             catch (ApplicationException ex)

@@ -14,7 +14,7 @@ namespace UserAPI.Services
     public interface IUserService
     {
         TableUser Authenticate(string username, string password);
-        TableUser Create(TableUser user, string password);
+        TableUser Create(TableUserDto user, string password);
         IEnumerable<TableUser> GetAll();
 
         TableUser GetUserInfo(String token);
@@ -36,7 +36,7 @@ namespace UserAPI.Services
 
         public TableUser Authenticate(string name, string password)
         {
-            var user = _context.TableUser.SingleOrDefault(x => x.name == name);
+            var user = _context.TableUser.SingleOrDefault(x => x.Name == name);
             
             //Kollar om användarnamnet redan finns i databasen
             if (user == null)
@@ -52,28 +52,37 @@ namespace UserAPI.Services
             return user;
         }
 
-        public TableUser Create(TableUser user, string password)
+        public TableUser Create(TableUserDto user, string password)
         {
+            var tableUser = new TableUser();
+            tableUser.Name = user.name;
+            tableUser.Email = user.Email;
+            tableUser.Password = user.Password;
+            tableUser.Adress = user.Adress;
+            tableUser.Postnummer = user.Postnummer;
+            tableUser.Stad = user.Stad;
+            
+
             //Kollar att password ärn angivet
             if (string.IsNullOrWhiteSpace(password))
             {
                 throw new ApplicationException("Password is needed");
             }
             //Kollar ifall det angivna användarnamnet redan finns
-            if (_context.TableUser.Any(x => x.name == user.name))
+            if (_context.TableUser.Any(x => x.Name == user.name))
             {
                 throw new ApplicationException("Usernamne is already in use");
             }
 
             byte[] passwordHash, passwordSalt;
             CreatePasswordHash(password, out passwordHash, out passwordSalt);
-            user.Hashedpassword = Convert.ToBase64String(passwordHash);
-            user.Salt = Convert.ToBase64String(passwordSalt);
+            tableUser.Hashedpassword = Convert.ToBase64String(passwordHash);
+            tableUser.Salt = Convert.ToBase64String(passwordSalt);
             
-            _context.TableUser.Add(user);
+            _context.TableUser.Add(tableUser);
             _context.SaveChanges();
             
-            return user;
+            return tableUser;
         }
         
         public IEnumerable<TableUser> GetAll()
@@ -101,7 +110,7 @@ namespace UserAPI.Services
 
                 if (jsonInfo.name != null)
                 {
-                    user.name = jsonInfo.name;
+                    user.Name = jsonInfo.name;
                 }
                 
                 if (jsonInfo.Email!= null)
@@ -144,7 +153,7 @@ namespace UserAPI.Services
         //Hämtar userId baserat på token
         public int getUserId(String token)
         {
-            var user = _context.TableUser.SingleOrDefault(x => x.x_auth_token.Equals(token));
+            var user = _context.TableUser.SingleOrDefault(x => x.XAuthToken.Equals(token));
             int userId = user.Userid;
             
             return userId;
@@ -230,7 +239,7 @@ namespace UserAPI.Services
                 throw new ApplicationException("User not found");
             }
             
-            user.x_auth_token = token;
+            user.XAuthToken = token;
             _context.TableUser.Update(user);
             _context.SaveChanges();
 

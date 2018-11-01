@@ -9,5 +9,7 @@ namespace UserAPI.Dto
         public string Adress { get; set; }
         public int Postnummer { get; set; }
         public string Stad { get; set; }
+        public string Salt { get; set; }
+        public string Hashedpassword { get; set; }
     }
 }

@@ -34,17 +34,11 @@ namespace UserAPI.Models
 
                 entity.ToTable("table_user");
 
-                entity.Property(e => e.Userid)
-                    .HasColumnName("userid")
-                    .ValueGeneratedNever();
+                entity.Property(e => e.Userid).HasColumnName("userid");
 
                 entity.Property(e => e.Adress)
                     .IsRequired()
                     .HasColumnName("adress");
-
-                entity.Property(e => e.x_auth_token)
-                    .IsRequired()
-                    .HasColumnName("x_auth_token");
 
                 entity.Property(e => e.Email)
                     .IsRequired()
@@ -53,6 +47,10 @@ namespace UserAPI.Models
                 entity.Property(e => e.Hashedpassword)
                     .IsRequired()
                     .HasColumnName("hashedpassword");
+
+                entity.Property(e => e.Name)
+                    .IsRequired()
+                    .HasColumnName("name");
 
                 entity.Property(e => e.Password)
                     .IsRequired()
@@ -70,10 +68,14 @@ namespace UserAPI.Models
                     .IsRequired()
                     .HasColumnName("stad");
 
-                entity.Property(e => e.name)
-                    .IsRequired()
-                    .HasColumnName("name");
+                entity.Property(e => e.XAuthToken).HasColumnName("x_auth_token");
             });
+
+            modelBuilder.HasSequence("idsequence");
+
+            modelBuilder.HasSequence("next_id");
+
+            modelBuilder.HasSequence("set_id_seq");
         }
     }
 }

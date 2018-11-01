@@ -55,10 +55,10 @@ namespace UserAPI.Controllers
                 return BadRequest(ModelState);
             }
 
-            if (id != tableUser.Userid)
+           /* if (id != tableUser.Userid)
             {
                 return BadRequest();
-            }
+            }*/
 
             _context.Entry(tableUser).State = EntityState.Modified;
 
@@ -83,7 +83,7 @@ namespace UserAPI.Controllers
 
         // POST: api/TableUsers
         [HttpPost]
-        public async Task<IActionResult> PostTableUser([FromBody] TableUser tableUser)
+        /*public async Task<IActionResult> PostTableUser([FromBody] TableUser tableUser)
         {
             if (!ModelState.IsValid)
             {
@@ -108,7 +108,7 @@ namespace UserAPI.Controllers
             }
 
             return CreatedAtAction("GetTableUser", new { id = tableUser.Userid }, tableUser);
-        }
+        }*/
 
         // DELETE: api/TableUsers/5
         [HttpDelete("{id}")]

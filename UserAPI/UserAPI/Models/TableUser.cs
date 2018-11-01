@@ -7,7 +7,7 @@ namespace UserAPI.Models
     {
         public int Userid { get; set; }
         public string x_auth_token{ get; set; }
-        public string Username { get; set; }
+        public string name { get; set; }
         public string Password { get; set; }
         public string Hashedpassword { get; set; }
         public string Salt { get; set; }

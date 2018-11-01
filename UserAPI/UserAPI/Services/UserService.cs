@@ -34,9 +34,9 @@ namespace UserAPI.Services
             _context = context;
         }
 
-        public TableUser Authenticate(string username, string password)
+        public TableUser Authenticate(string name, string password)
         {
-            var user = _context.TableUser.SingleOrDefault(x => x.Username == username);
+            var user = _context.TableUser.SingleOrDefault(x => x.name == name);
             
             //Kollar om användarnamnet redan finns i databasen
             if (user == null)
@@ -60,7 +60,7 @@ namespace UserAPI.Services
                 throw new ApplicationException("Password is needed");
             }
             //Kollar ifall det angivna användarnamnet redan finns
-            if (_context.TableUser.Any(x => x.Username == user.Username))
+            if (_context.TableUser.Any(x => x.name == user.name))
             {
                 throw new ApplicationException("Usernamne is already in use");
             }
@@ -101,7 +101,7 @@ namespace UserAPI.Services
 
                 if (jsonInfo.name != null)
                 {
-                    user.Username = jsonInfo.name;
+                    user.name = jsonInfo.name;
                 }
                 
                 if (jsonInfo.Email!= null)
@@ -144,7 +144,7 @@ namespace UserAPI.Services
         //Hämtar userId baserat på token
         public int getUserId(String token)
         {
-            var user = _context.TableUser.SingleOrDefault(x => x.Authtoken.Equals(token));
+            var user = _context.TableUser.SingleOrDefault(x => x.x_auth_token.Equals(token));
             int userId = user.Userid;
             
             return userId;
@@ -230,7 +230,7 @@ namespace UserAPI.Services
                 throw new ApplicationException("User not found");
             }
             
-            user.Authtoken = token;
+            user.x_auth_token = token;
             _context.TableUser.Update(user);
             _context.SaveChanges();
 

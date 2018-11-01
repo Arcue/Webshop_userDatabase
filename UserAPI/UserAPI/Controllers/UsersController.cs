@@ -105,7 +105,7 @@ namespace UserAPI.Controllers
         {
             try
             {
-                TableUser user = _userService.GetUserInfo(authtoken);
+                UserInfotDto user = _mapper.Map<UserInfotDto>(_userService.GetUserInfo(authtoken));
                 return Ok(new
                 {
                     message = user.Userid

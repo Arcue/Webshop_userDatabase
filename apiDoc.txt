@@ -20,9 +20,9 @@ Request:{
 	name:		string
 	email: 		string
 	password: 	string
-	homeadress:	string
-	postnumber:	string
-	city:		String
+	adress:		string
+	postnummer:	string
+	stad:		String
 }
 Response
 {
@@ -35,11 +35,12 @@ Get user
 Get /user
 Headers: x-auth-token: TOKEN-String
 Response {
+	userid:		int
 	name:		string
 	email: 		string
-	homeadress:	string
+	adress:		string
 	postnummer:	string
-	city:		string
+	stad:		string
 }
 Edit userinfo
 
@@ -50,8 +51,8 @@ Request: {
 	email:	 	string
 	password: 	string
 	homeadress:	string
-	postnumber:	string
-	city:		string
+	postnummer:	string
+	stad:		string
 }
 
 Response: 200 OK

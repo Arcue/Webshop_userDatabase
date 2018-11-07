@@ -34,9 +34,9 @@ namespace UserAPI.Services
             _context = context;
         }
 
-        public TableUser Authenticate(string name, string password)
+        public TableUser Authenticate(string email, string password)
         {
-            var user = _context.TableUser.SingleOrDefault(x => x.Name == name);
+            var user = _context.TableUser.SingleOrDefault(x => x.Email == email);
             
             //Kollar om användarnamnet redan finns i databasen
             if (user == null)

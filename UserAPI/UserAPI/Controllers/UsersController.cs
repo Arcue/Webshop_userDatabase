@@ -51,7 +51,7 @@ namespace UserAPI.Controllers
 
             if (user == null)
             {
-                return BadRequest(new { message = "Username or password incorrect" });
+                return BadRequest(new { message = "Email or password incorrect" });
             }
 
             var tokenHandler = new JwtSecurityTokenHandler();
@@ -71,7 +71,7 @@ namespace UserAPI.Controllers
 
             //Spara token i user databasen
             _userService.StoreToken(tokenString, user.Userid);
-
+           
             return Ok(new
             {
                 x_auth_token = tokenString

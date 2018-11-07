@@ -107,7 +107,12 @@ namespace UserAPI.Controllers
                 UserInfotDto user = _mapper.Map<UserInfotDto>(_userService.GetUserInfo(authtoken));
                 return Ok(new
                 {
-                    message = user.Userid
+                    userId = user.Userid,
+                    name = user.name,
+                    email = user.Email,
+                    adress = user.Adress,
+                    stad = user.Stad,
+                    postnummer = user.Postnummer
                 });
             }
             catch (Exception ex)

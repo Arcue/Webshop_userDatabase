@@ -10,7 +10,7 @@ Request: JSON objekt med userinfo
 
 Response:
 {
-	x-auth-token: TOKEN-String
+	x_auth_token: TOKEN-String
 }
 
 
@@ -26,14 +26,14 @@ Request:{
 }
 Response
 {
-	x-auth-token: TOKEN-String
+	x_auth_token: TOKEN-String
 }
 
 Response: 200 OK
 
 Get user
 Get /user
-Headers: x-auth-token: TOKEN-String
+Headers:x_auth_token: TOKEN-String
 Response {
 	userid:		int
 	name:		string
@@ -45,7 +45,7 @@ Response {
 Edit userinfo
 
 Put /users/update
-Headers: x-auth-token: TOKEN-String 
+Headers: x_auth_token: TOKEN-String 
 Request: {
 	name:		string
 	email:	 	string
